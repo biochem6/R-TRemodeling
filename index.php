@@ -17,7 +17,7 @@ switch ($action) {
         $email = '';
 
         // Load view
-        include 'view/register.php';
+        include 'view/main.php';
         break;
         case 'submit':
         // Copy form values to local variables
