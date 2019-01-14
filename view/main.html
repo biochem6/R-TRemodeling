@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>R&T Remodeling</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <p class="title">R & T Remodeling</p>
+    </nav>
+</header>
+    <main>
+        <div class="services">
+            <h2>Cleveland Area HVAC</h2>
+            <p class="phone">(216) 544-0273</p>
+            <h4 class="servicesTitle">Services</h4>
+            <ul>
+                <li class="serviceList">Air Conditioning Installation, Repair, & System Check</li>
+                <li class="serviceList">Heating Installation and Repair</li>
+                <li class="serviceList">Ventilation Installation, Repair, & Replacement</li>
+                <li class="serviceList">Heat Pump System Check</li>
+                <li class="serviceList">Gas and Furnance Replacement</li>
+                <li class="serviceList">Water Heater Installation, Repair, & Replacement</li>
+                <li class="serviceList last">Duct Cleaning</li>
+            </ul>
+        </div>
+        <h4>Contact Us</h4>
+        <div class=contactForm>
+            <form id="Form" action="." method="post" >
+                <fieldset form="contactForm">
+                    <legend>Get a Quote Today!</legend>
+                    
+                    <?php if (isset($error)) : ?>
+                        <p class='error'><?php echo htmlspecialchars($error); ?></p>
+                    <?php endif; ?>
+                    <table>
+                        <tr>
+                            <td><label>First Name:</label></td>
+                            <td><input class="input" type="text" name=";first_name" 
+                                value="<?php echo htmlspecialchars($first_name);?>"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Last Name:</label></td>
+                            <td><input class="input" type="text" name="last_name" 
+                                value="<?php echo htmlspecialchars($last_name);?>"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>E-Mail:</label></td>
+                            <td><input class="input" type="text" name="email" 
+                                value="<?php echo htmlspecialchars($email);?>"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label>Description:</label></td>
+                            <td><textarea class="input" type="text" name="comment" required ><?php echo htmlspecialchars($comment);?></textarea></td>
+                        </tr>
+                    </table>
+                    <label>&nbsp;</label>
+                    <div class="submitDiv">
+                        <input class="submit" type="submit" name="action" value="Submit"/> 
+                    </div>       
+                </fieldset>
+            </form>
+        </div>
+        <h4 class="aboutUsTitle">About Us</h4>
+        <p class="aboutUsText">&emsp; We are a small family based company with affordable prices and quality service. We know what it takes to keep your home warm and comfoftable in the winter, and cool in the summer.</p>
+    </main>
+</body>
+</html>

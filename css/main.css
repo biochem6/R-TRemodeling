@@ -1,0 +1,135 @@
+/***************************Mobile************************************************/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    padding: 10px 0 0 5px;
+}
+
+.navbar {
+    background: black;
+    color: white;
+    height: 2.5rem;    
+}
+
+main {
+    padding: 25px;
+  
+}
+
+.servicesTitle {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.services {
+    
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.phone {
+    margin: 0;
+    text-align: center;
+}
+
+h4{
+    margin: 0.5rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    font-family: arial;
+    font-size: 0.85rem;
+    border-bottom: thick double #3b5998;
+}
+
+.serviceList { 
+   text-align: center;
+   line-height: 1.0rem;
+   padding: 10px;
+}
+
+/*************************Contact Form******************************************
+*
+*
+*
+*
+*******************************************************************************/
+.contactForm {
+    background: #3b5998;
+    padding: 5px 5px 0.1px 5px;
+}
+
+legend {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.last {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: none;
+}
+
+fieldset {
+    all: initial;
+    border: 1px solid white;  
+    padding: 10px;
+    margin: 0;
+    width: calc(100% - 22px);
+}
+
+
+textarea, .input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    height: 8rem;
+}
+
+.submitDiv {
+    text-align: center;
+ 
+}
+
+.submit {
+    height: 2.5rem;
+    width: 6.0rem;
+    background: orangered;
+    font-size: 1.2rem;
+    color: white;
+    border: 2px outset white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/**********************************************************************************/
+.aboutUsTitle {
+    margin-top: 2.5rem;
+}
+
+.aboutUsText {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
