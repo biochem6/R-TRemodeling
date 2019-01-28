@@ -1,26 +1,68 @@
+:root {
+    --background-color: #82000D;
+    --accent-color: white;
+    --body-color: white; 
+    --text-color: #444343;
+    --text-color-darker: #2c2b2b;
+}
+
+
+
+
 /***************************Mobile************************************************/
 body {
     margin: 0;
     padding: 0;
 }
 
-.title {
-    margin: 10px;
+header {
+    width: 100%;
+    box-shadow:0px 1px 1px var(--background-color);
 }
 
-.navbar {
-    background: black;
-    color: white;
-    height: 35px; 
-    border-bottom: 3.5px solid orangered;
-    position: fixed;
-    width: 100%;
+.topHeader {
+    margin: 0;
+    padding: 0;
+    height: 35px;
+    background-color: var(--background-color);
+}
+
+.bottomHeader {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #82000D;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+#logo {
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+#phone { 
+    color: var(--background-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.callToday {
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
 }
 
 main {
-    padding: 25px;
- 
-    padding-top: 60px;  
+    margin-left: 15px;
+    margin-right: 15px; 
   
 }
 
@@ -29,22 +71,8 @@ main {
     padding-top: 10px;
 }
 
-.services {
-    
-}
-
-h2 {
-    text-align: center;
-    margin: 0;
-}
-
 .phone {
     margin: 0;
-    text-align: center;
-}
-
-h4{
-    margin: 0.5rem;
     text-align: center;
 }
 
@@ -52,23 +80,12 @@ table {
     width: 100%;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-  
-}
-
 .serviceList { 
-    text-align: center;
-    line-height: 1.0rem;
+    line-height: 0.8rem;
     padding: 10px;
-    list-style: none;
     font-family: arial;
     font-size: 0.85rem;
-    border-bottom: thick double #3b5998;
+    color: var(--text-color-darker);
 }
 
 /*************************Contact Form******************************************
@@ -78,8 +95,8 @@ li {
 *
 *******************************************************************************/
 .contactForm {
-    background: #3b5998;
-    padding: 5px 5px 0.1px 5px;
+    background-color: rgb(143, 143, 143);
+    padding:  0 5px 5px 5px;
 }
 
 legend {
@@ -90,11 +107,6 @@ label {
     color: white;
 }
 
-.last {
-    text-align: center;
-    padding-bottom: 1.5rem;
-    border-bottom: none;
-}
 
 fieldset {
     all: initial;
@@ -122,7 +134,7 @@ textarea {
 .submit {
     height: 2.5rem;
     width: 6.0rem;
-    background: orangered;
+    background-color: var(--background-color);
     font-size: 1.2rem;
     color: white;
     border: 2px outset white;
@@ -137,20 +149,28 @@ textarea {
 *
 *
 *********************************************************************************/
-.aboutUsTitle {
-    margin-top: 2.5rem;
+.aboutUsHeading {
+    color: var(--background-color);
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .aboutUsText {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5rem;
+    color: var(--text-color);
 }
 
-.aboutUsList {
-    margin-left: 50px;
-    margin-bottom: 10px;
-    line-height: 1.5rem;
-    font-style: italic;
+.certifications {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.certs {
+    width: 100px;
+    height: 100px;
 }
 
 /*************************Footer************************************************
@@ -163,8 +183,7 @@ textarea {
     bottom: 0;
     width: 100%;
     height: 2.0rem;
-    background-color: black;
-    border-top: 3.5px solid orangered;    
+    background-color: var(--background-color);   
 }
 
 .webmaster {
@@ -175,4 +194,534 @@ textarea {
     font-size: 0.85rem;
     padding-top: 0.5rem;
     margin-left: 0.25rem;
+}
+
+@media only screen and (min-width: 1600px) {
+    body {
+        background-color: var(--body-color);
+        margin: 0;
+        padding-bottom: 0;
+    } 
+
+    header {
+        width: 100%;
+        box-shadow:0px 5px 5px var(--text-color);
+    }
+
+    .topHeader {
+        margin: 0;
+        padding: 0;
+        height: 35px;
+        background-color: var(--background-color);
+    }
+
+    .bottomHeader {
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 2px solid #82000D;
+        background-color: var(--accent-color);
+        padding-right: 17.5%;
+        padding-left: 17.5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #logo {
+        height: 100px;
+        margin-top: 10px;
+    } 
+
+    .call {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .callToday {
+        display: inline-block;
+        font-size: 2.0rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    #phone { 
+        display: inline-block;
+        color: var(--background-color);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.0rem;
+        font-weight: bold;
+        margin-left: 5px;
+        
+        
+    }
+
+    main {
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+        padding: 0;
+        background-color: white;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .servicesQuoteDiv {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+
+    .aboutUs {
+        text-align: justify;
+    }
+
+    .aboutUsHeading {
+        color: var(--background-color);
+
+    }
+
+    .aboutUsText {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        line-height: 160%;
+    }
+
+    .hvac {
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+        font-size:  30px;
+    }
+
+    .services {
+        display: inline-block;
+        width: 60%;
+        margin-right: 10%;
+    }
+
+    .serviceList {
+        font-size: 18px;
+        line-height: 1.5rem;
+        border: none;
+        color: var(--text-color-darker);
+        list-style-type: disc;
+        text-align: initial;
+    }
+
+    .contactForm {
+        height: 100%;
+        display: inline-block;
+        width: 45%;
+        margin-top: 21.44px;
+    }
+
+    fieldset {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 1.5rem;
+    }
+
+    .left {
+        width: 100px;
+    }
+
+    .input {
+        height: 2.0rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .input_description {
+        height: 10rem;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+    }
+
+    .contactFormFlex {
+        height: 100%;
+    }
+    
+    .list {
+        margin: 0;
+        margin-left: 50px;
+        padding: 0;
+    }
+
+    .certifications {
+        text-align: center;
+    }
+    
+    .certs {
+        height: 200px;
+        width: 200px;
+        margin: 5%;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 25px 25px;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .contactForm {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    body {
+        background-color: var(--body-color);
+        margin: 0;
+        padding-bottom: 0;
+    } 
+
+    header {
+        width: 100%;
+        box-shadow:0px 5px 5px var(--text-color);
+    }
+
+    .topHeader {
+        margin: 0;
+        padding: 0;
+        height: 35px;
+        background-color: var(--background-color);
+    }
+
+    .bottomHeader {
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 2px solid #82000D;
+        background-color: var(--accent-color);
+        padding-right: 5%;
+        padding-left: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #logo {
+        height: 100px;
+        margin-top: 10px;
+    } 
+
+    .call {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .callToday {
+        display: inline-block;
+        font-size: 2.0rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    #phone { 
+        display: inline-block;
+        color: var(--background-color);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.0rem;
+        font-weight: bold;
+        margin-left: 5px;
+        
+        
+    }
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0;
+        background-color: white;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .servicesQuoteDiv {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+
+    .aboutUs {
+        text-align: justify;
+    }
+
+    .aboutUsHeading {
+        color: var(--background-color);
+
+    }
+
+    .aboutUsText {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        line-height: 160%;
+    }
+
+    .hvac {
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+        font-size:  30px;
+    }
+
+    .services {
+        display: inline-block;
+        width: 40%;
+        margin-right: 10%;
+    }
+
+    .serviceList {
+        font-size: 18px;
+        line-height: 1.5rem;
+        border: none;
+        color: var(--text-color-darker);
+        list-style-type: disc;
+        text-align: initial;
+    }
+
+    .contactForm {
+        height: 100%;
+        display: inline-block;
+        width: 50%;
+        margin-top: 21.44px;
+    }
+
+    fieldset {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 1.0rem;
+    }
+
+    .left {
+        width: 50px;
+    }
+
+    .input {
+        height: 2.0rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .input_description {
+        height: 10rem;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+    }
+
+    .contactFormFlex {
+        height: 100%;
+    }
+    
+    .list {
+        margin: 0;
+        margin-left: 50px;
+        padding: 0;
+    }
+
+    .certifications {
+        text-align: center;
+    }
+    
+    .certs {
+        height: 200px;
+        width: 200px;
+        margin: 5%;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 25px 25px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    body {
+        background-color: var(--body-color);
+        margin: 0;
+        padding-bottom: 0;
+    } 
+
+    header {
+        width: 100%;
+        box-shadow:0px 5px 5px var(--text-color);
+    }
+
+    .topHeader {
+        margin: 0;
+        padding: 0;
+        height: 35px;
+        background-color: var(--background-color);
+    }
+
+    .bottomHeader {
+        height: 120px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 2px solid #82000D;
+        background-color: var(--accent-color);
+        padding-right: 12%;
+        padding-left: 12%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #logo {
+        height: 100px;
+        margin-top: 10px;
+    } 
+
+    .call {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .callToday {
+        display: inline-block;
+        font-size: 2.0rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    #phone { 
+        display: inline-block;
+        color: var(--background-color);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.0rem;
+        font-weight: bold;
+        margin-left: 5px;
+        
+        
+    }
+
+    main {
+        margin-left: 12%;
+        margin-right: 12%;
+        padding: 0;
+        background-color: white;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .servicesQuoteDiv {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+
+    .aboutUs {
+        text-align: justify;
+    }
+
+    .aboutUsHeading {
+        color: var(--background-color);
+
+    }
+
+    .aboutUsText {
+        font-size: 1.3rem;
+        color: var(--text-color);
+        line-height: 160%;
+    }
+
+    .hvac {
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+        font-size:  30px;
+    }
+
+    .services {
+        display: inline-block;
+        width: 60%;
+        margin-right: 10%;
+    }
+
+    .serviceList {
+        font-size: 18px;
+        line-height: 1.5rem;
+        border: none;
+        color: var(--text-color-darker);
+        list-style-type: disc;
+        text-align: initial;
+    }
+
+    .contactForm {
+        height: 100%;
+        display: inline-block;
+        width: 60%;
+        margin-top: 21.44px;
+    }
+
+    fieldset {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 1.0rem;
+    }
+
+    .left {
+        width: 50px;
+    }
+
+    .input {
+        height: 2.0rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .input_description {
+        height: 10rem;
+    }
+
+    .submit:hover {
+        cursor: pointer;
+    }
+
+    .contactFormFlex {
+        height: 100%;
+    }
+    
+    .list {
+        margin: 0;
+        margin-left: 50px;
+        padding: 0;
+    }
+
+    .certifications {
+        text-align: center;
+    }
+    
+    .certs {
+        height: 200px;
+        width: 200px;
+        margin: 5%;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+        box-shadow: 0 25px 25px;
+    }
+    
 }
