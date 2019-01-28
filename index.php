@@ -28,7 +28,7 @@ switch ($action) {
 
         // Set up email variables
     
-        $to_address = $mail->username;
+        $to_address = $email->username;
         $to_name = $first_name . ' ' . $last_name;
         $from_address = 'contact@ashlandportfolio.herokuapp.com';
         $from_name = 'Contact Form';
