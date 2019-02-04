@@ -41,7 +41,7 @@ switch ($action) {
             send_email($to_address, $to_name, 
                     $from_address, $from_name, 
                     $subject, $body, $is_body_html);
-            //include 'view/success.php';
+            include 'view/success.php';
         } catch (Exception $ex) {
             $error = $ex->getMessage();
             include 'view/main.php';
