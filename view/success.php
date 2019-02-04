@@ -1,4 +1,8 @@
-<html>
+<?php 
+    require_once("../css/view.css");
+?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="../css/view.css">
 </head>
