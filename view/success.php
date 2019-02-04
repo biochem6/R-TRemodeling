@@ -1,4 +1,8 @@
-<?php include 'header.php'; ?>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/view.css">
+</head>
+<body>
 <main>
     <h2>Success</h2>
     <p>The following information has been successfully
@@ -10,5 +14,7 @@
         <li>Phone Number: <?php echo htmlspecialchars($phone); ?></li>
         <li>Comment: <?php echo htmlspecialchars($comment); ?></li>
     </ul>
+    <button type="button" id="goHome">Go Home</button>
 </main>
-<?php include 'footer.php'; ?>
+</body>
+</html>
