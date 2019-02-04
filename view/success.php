@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="../css/view.css">
-    <?php include 'CSS/main.css'; ?>
+    <?php include '../css/view.css'; ?>
 </head>
 <body>
 <main>
