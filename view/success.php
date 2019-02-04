@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="../css/view.css">
-    <style><?php include_once("../css/view.css"); ?> </style>
+    <style>
+    <?php 
+        include ('../css/view.css'); 
+    ?> 
+    </style>
 </head>
 <body>
 <main>
