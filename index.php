@@ -33,7 +33,7 @@ switch ($action) {
         $from_address = 'contact@ashlandportfolio.herokuapp.com';
         $from_name = 'Contact Form';
         $subject = 'Portfolio Message';
-        $body = 'rantremodeling5@gmail.com' . trim(filter_input(INPUT_POST, 'comment'));
+        $body = $email . "<br><br>" . $phone . "<br><br>" . trim(filter_input(INPUT_POST, 'comment'));
         $is_body_html = true;
         
         // Send email
