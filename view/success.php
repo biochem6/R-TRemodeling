@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="../css/view.css">
+    <link rel="stylesheet" href="..css/view.css">
 </head>
 <body>
 <main>
@@ -15,7 +15,7 @@
         <li>Comment: <?php echo htmlspecialchars($comment); ?></li>
     </ul>
     <div class="buttonDiv">
-        <a href="main.php"><button type="button" id="goHome" >Go Back</button></a>
+        <a href="index.php"><button type="button" id="goHome" >Go Back</button></a>
     </div>
 </main>
 </body>
