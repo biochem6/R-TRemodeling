@@ -5,8 +5,8 @@
 <body>
 <main>
     <h2>Success</h2>
-    <p>The following information has been successfully
-       sent to my email and I will respond to you shortly.</p>
+    <p>Thank you! The following information has been successfully
+       sent to my email and we will respond to your request shortly.</p>
     <ul>
         <li>First Name: <?php echo htmlspecialchars($first_name); ?></li>
         <li>Last Name: <?php echo htmlspecialchars($last_name); ?></li>
@@ -14,7 +14,9 @@
         <li>Phone Number: <?php echo htmlspecialchars($phone); ?></li>
         <li>Comment: <?php echo htmlspecialchars($comment); ?></li>
     </ul>
-    <button type="button" id="goHome">Go Home</button>
+    <div class="buttonDiv">
+        <a href="main.php"><button type="button" id="goHome" >Go Back</button></a>
+    </div>
 </main>
 </body>
 </html>
