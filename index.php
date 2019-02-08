@@ -23,6 +23,7 @@ switch ($action) {
         // Copy form values to local variables
         $first_name = trim(filter_input(INPUT_POST, 'first_name'));
         $last_name = trim(filter_input(INPUT_POST, 'last_name'));
+        $phone_number = trim(filter_input(INPUT_POST), 'phone_number');
         $comment = trim(filter_input(INPUT_POST, 'comment'));
         $email = trim(filter_input(INPUT_POST, 'email'));
 
@@ -33,7 +34,7 @@ switch ($action) {
         $from_address = 'contact@ashlandportfolio.herokuapp.com';
         $from_name = 'Contact Form';
         $subject = 'Portfolio Message';
-        $body = $email . "<br><br>" . $phone . "<br><br>" . trim(filter_input(INPUT_POST, 'comment'));
+        $body = $email . "<br><br>" . $phone_number . "<br><br>" . trim(filter_input(INPUT_POST, 'comment'));
         $is_body_html = true;
         
         // Send email

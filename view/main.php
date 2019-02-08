@@ -63,6 +63,12 @@
                             </tr>
 
                             <tr>
+                                <td class="left"><label>Phone Number:</label></td>
+                                <td><input class="input" type="text" name="phone_number"
+                                    value="<?php echo htmlspecialchars($phone_number);?>"></td>
+                            </tr>
+
+                            <tr>
                                 <td class="left"><label>E-Mail:</label></td>
                                 <td><input class="input" type="text" name="email" 
                                     value="<?php echo htmlspecialchars($email);?>"></td>

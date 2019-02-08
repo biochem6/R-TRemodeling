@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
-function send_email($to_address, $to_name, $from_address, $from_name, $subject, $body, $is_body_html = false) {
+function send_email($to_address, $to_name, $from_address, $from_name, $phone_number, $subject, $body, $is_body_html = false) {
     if (!valid_email($to_address)) {
         throw new Exception('This To address is invalid: ' . htmlspecialchars($to_address));
     } 
